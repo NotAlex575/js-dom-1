@@ -22,12 +22,12 @@ h1{
     justify-content: center;
 }
 
-.bg-black{
+.background-black{
     background-color: black;
 }
 
-.bg-white{
-    background-color: white;
+.background-white{
+    background-color: rgb(189, 184, 184);
 }
 
 /*INTERRUTTORE PULSANTE*/
@@ -35,14 +35,14 @@ h1{
 .interruttore-container{
     width: 400px;
     height: 300px;
-    border: 1px solid black;
-    background-color: white;
+
+    background-color: rgb(169, 169, 169);
 }
 
-.interruttore-pulsante-container{
+.interruttore{
     width: 20%;
-    height: 100%;
-    border: 1px solid black;
+    background-color: rgb(169, 169, 169);
+    border: 2px solid black;
 }
 
 /*IMMAGINE LAMPADINA*/

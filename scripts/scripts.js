@@ -1,7 +1,8 @@
-const accendi_bottone = document.getElementById('accendi-bottone')
-const accendi_lampadina = document.getElementById('accendi-immagine')
-const testo_bianco = document.getElementById('light-text')
-const schermo_bianco = document.getElementById('background-black')
+const accendi_bottone = document.getElementById('accendi-bottone');
+const accendi_lampadina = document.getElementById('accendi-immagine');
+const testo_bianco = document.getElementById('light-text');
+const schermo_bianco = document.getElementById('bg-black');
+const testo_accendi_spegni = document.getElementById('accendi-spegni-testo')
 
 accendi_bottone.addEventListener('click', function(){
     if(accendi_lampadina.classList.contains('accendi-lampadina')){
@@ -12,8 +13,10 @@ accendi_bottone.addEventListener('click', function(){
         testo_bianco.classList.add('color-black');
         testo_bianco.classList.remove('color-white');
         //cambio il background del sito da nero a bianco
-        schermo_bianco.classList.add('bg-white');
-        schermo_bianco.classList.remove('bg-black');
+        schermo_bianco.classList.add('background-white');
+        schermo_bianco.classList.remove('background-black');
+        //modifico il testo nel bottone da accendi a spegni
+        testo_accendi_spegni.innerHTML = "Spegni";
     }
     else{
         //spegni la lampadina
@@ -23,7 +26,9 @@ accendi_bottone.addEventListener('click', function(){
         testo_bianco.classList.add('color-white');
         testo_bianco.classList.remove('color-black');
         //cambio il background del sito da nero a bianco
-        schermo_bianco.classList.add('bg-black');
-        schermo_bianco.classList.remove('bg-white');
+        schermo_bianco.classList.add('background-black');
+        schermo_bianco.classList.remove('background-white');
+        //modifico il testo nel bottone da spegni a accendi
+        testo_accendi_spegni.innerHTML = "Accendi"
     }
 })
