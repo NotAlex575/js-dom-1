@@ -26,3 +26,19 @@ h1{
     height: 100%;
     border: 1px solid black;
 }
+
+.spegni-lampadina{
+    width: 300px;
+    height: 300px;
+    background-image: url(/img/yellow_lamp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.accendi-lampadina{
+    width: 400px;
+    height: 300px;
+    background-image: url(/img/white_lamp.png); 
+    background-repeat: no-repeat;
+    background-position: center;
+}
