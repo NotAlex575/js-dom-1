@@ -8,6 +8,8 @@ body{
     height: 100px;
 }
 
+/*CAMBIO DI COLORE DEL TESTO DA BIANCO A NERO*/
+
 .color-white{
     color:white;
 }
@@ -16,11 +18,7 @@ body{
     color:black;
 }
 
-h1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+/*CAMBIO DI COLORE DELA PAGINA DA ""BIANCO"" A NERO (per evitare di avere una flashbang quando cambi colore)*/
 
 .background-black{
     background-color: black;
