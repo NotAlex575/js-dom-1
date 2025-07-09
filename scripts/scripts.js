@@ -1,6 +1,7 @@
 const accendi_bottone = document.getElementById('accendi-bottone')
 const accendi_lampadina = document.getElementById('accendi-immagine')
 const testo_bianco = document.getElementById('light-text')
+const schermo_bianco = document.getElementById('background-black')
 
 accendi_bottone.addEventListener('click', function(){
     if(accendi_lampadina.classList.contains('accendi-lampadina')){
@@ -10,6 +11,9 @@ accendi_bottone.addEventListener('click', function(){
         //cambio il color del testo da bianco a nero
         testo_bianco.classList.add('color-black');
         testo_bianco.classList.remove('color-white');
+        //cambio il background del sito da nero a bianco
+        schermo_bianco.classList.add('bg-white');
+        schermo_bianco.classList.remove('bg-black');
     }
     else{
         //spegni la lampadina
@@ -18,5 +22,8 @@ accendi_bottone.addEventListener('click', function(){
         //cambio il color del testo da nero a bianco
         testo_bianco.classList.add('color-white');
         testo_bianco.classList.remove('color-black');
+        //cambio il background del sito da nero a bianco
+        schermo_bianco.classList.add('bg-black');
+        schermo_bianco.classList.remove('bg-white');
     }
 })

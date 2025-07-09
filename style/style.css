@@ -26,6 +26,10 @@ h1{
     background-color: black;
 }
 
+.bg-white{
+    background-color: white;
+}
+
 /*INTERRUTTORE PULSANTE*/
 
 .interruttore-container{
